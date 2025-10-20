@@ -11,8 +11,56 @@
         <main>
             <article>
                 <header>
-                    <h2>My First Blog Post</h2>
+                    <h2>This is Exactly Where I Host and Manage My Domains</h2>
                     <p>Posted <time datetime="2025-10-20">October 20, 2025</time></p>
+                </header>
+                <p>
+                    In the beginning, there was GoDaddy...and it was good. No, actually it was just fine. After they raised
+                    my monthly costs for the third time, I was thoroughly annoyed. When I had to jump through hoops and pay them
+                    more for basic things that should be free - like SSL certs and SMTP email service - I really started to get
+                    mad. I'd also purchased some domains in the early 2000s with NTC Hosting, though; and, since that required me
+                    to install PHP manually and felt about as trustworthy as buying a wristwatch from a shady back-alley dealer
+                    in a trenchcoat, I tolerated GoDaddy for a fair time.
+                </p>
+                <p>
+                    When I began study at the (then) Code Louisville coding bootcamp, I learned all about git and GitHub and started
+                    to host some projects with GitHub Pages. Pairing that with custom domains from Namecheap or similar domain brokers
+                    is very easy to setup and low maintenance. The big downside is that GitHub Pages is only for static sites, so there's
+                    no easy way to add a server side or database. Pretty perfect for JAMstack sites, though - especially once I abandoned
+                    Namecheap, Google Domains, etc. for Cloudflare. SSL certs, CDN, DNS management, security, logging, and so much more,
+                    all for an extremely reasonable price (free, for most of my small sites). Nowadays, Cloudflare has become an even
+                    better solution, with the advent and expansion of Cloudflare Pages and Workers. If I needed a backend, I'd pick up
+                    a DigitalOcean droplet or Linode (now Akamai) instance.
+                </p> 
+                <p>
+                    Once I started working at Kentucky Education Television (KET), I entered
+                    the wonderful world of Amazon Web Services (AWS). In that paradise of intuitive, well-named, streamlined features
+                    (sarcasm, in case you don't know about AWS), I discovered a fairly cheap option for hosting and domain management.
+                    The big strength of AWS, is integrating custom domains (Route 53) with hosting (EC2/ECS), a CDN (CloudFront),
+                    serverless functions (Lambda), and a flood of other confusingly named services for every need under the sun.
+                    The downsides of AWS are plentiful and well known: granular control of C-Names and DNS records is great...as long
+                    as you know what those are and when/how to edit their values. Fortunately for me, that was my job for a while, so
+                    that's not an issue; fluency in the CLI makes it even easier. The pricing model is a nightmare, though, and
+                    it's easy to accidentally rack up huge bills, even if you're careful. After crunching the numbers, I found AWS
+                    to be an excellent option for just about every service...except hosting. BRUTAL.
+                </p>
+                <p>
+                    So, here I am with too many logins and too many services (with the bills to match) and a decision to make about
+                    where to host my blog. So I did a bunch of research, and really reconsidered my footprint with an aim to consolidate.
+                    And, you know what I decided to do differently? Basically nothing. I was between "chado.dev/blog" and "blog.chado.dev".
+                    Since this domain is on Namecheap and I didn't want the hassle of having to remember/reset my login, I ended up
+                    just deploying to GitHub Pages and naming the repo "blog" - the default URL is exactly what I wanted!
+                </p>
+                <h3>Insights</h3>
+                <ul>
+                    <li>If it works, it works.</li>
+                    <li>Don't overthink, but also, don't not think.</li>
+                </ul>
+            </article>
+            <article>
+                <header>
+                    <h2>My First Blog Post</h2>
+                    <p>Posted <time datetime="2025-10-19">October 19, 2025</time></p>
                 </header>
                 <p>This is the content of my first blog post. It's short and sweet.</p>
             </article>
