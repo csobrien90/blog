@@ -1,0 +1,141 @@
+:root {
+    --font-transition: font-size 0.1s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    scroll-behavior: smooth;
+    display: grid;
+    max-width: 1400px;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+
+    @media screen and (min-width: 1044px) {
+        justify-content: end;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 0px;
+}
+
+body {
+    display: grid;
+    padding: 6rem 1rem 3rem;
+    max-width: 1044px;
+    justify-content: end;
+
+    @media screen and (min-width: 768px) {
+        padding: 6rem 2rem 3rem;
+    }
+}
+
+header.main-header {
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+    border-block-end: 1px solid black;
+    padding-block: 0 1rem;
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: -2px;
+        transition: var(--font-transition, none);
+
+        @media screen and (min-width: 768px) {
+            font-size: 6rem;
+        }
+    }
+
+    .italics {
+        font-style: italic;
+    }
+
+    @media screen and (min-width: 1044px) {
+        text-align: left;
+    }
+}
+
+main {
+    display: grid;
+    padding-block: 3rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    gap: 3rem;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.7;
+    }
+}
+
+article {
+    display: grid;
+    gap: 1.5rem;
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+p, details {
+    font-size: 1.25rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 1rem;
+    transition: var(--font-transition, none);
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.4rem;
+    }
+}
+
+summary {
+    display: grid;
+    pointer-events: none;
+
+    &::-webkit-details-marker, &::marker {
+        display: none;
+    }
+}
+
+aside {
+    display: grid;
+    justify-content: end;
+
+    a[href="#top"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+
+        @media screen and (pointer: coarse) {
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+        }
+    }
+}

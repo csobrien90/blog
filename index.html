@@ -7,12 +7,15 @@
         <link rel="stylesheet" href="src/styles.css">
     </head>
     <body>
-        <h1>Chad's Blog</h1>
+        <header class="main-header">
+            <h1>Chad's Blog</h1>
+            <p class="subtitle italics">&mdash; getting these thoughts into the ether</p>
+        </header>
         <main>
             <article>
                 <header>
-                    <h2>This is Exactly Where I Host and Manage My Domains</h2>
-                    <p>Posted <time datetime="2025-10-20">October 20, 2025</time></p>
+                    <h2>Where and how to host and manage domains</h2>
+                    <p class="subtitle">Posted <time datetime="2025-10-20">October 20, 2025</time></p>
                 </header>
                 <p>
                     In the beginning, there was GoDaddy...and it was good. No, actually it was just fine. After they raised
@@ -51,11 +54,13 @@
                     Since this domain is on Namecheap and I didn't want the hassle of having to remember/reset my login, I ended up
                     just deploying to GitHub Pages and naming the repo "blog" - the default URL is exactly what I wanted!
                 </p>
-                <h3>Insights</h3>
-                <ul>
-                    <li>If it works, it works.</li>
-                    <li>Don't overthink, but also, don't not think.</li>
-                </ul>
+                <details open>
+                    <summary><h3>Insights</h3></summary>
+                    <ul>
+                        <li>If it works, it works.</li>
+                        <li>Don't overthink, but also, don't not think.</li>
+                    </ul>
+                </details>
             </article>
             <article>
                 <header>
