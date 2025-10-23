@@ -103,7 +103,7 @@ article {
     }
 }
 
-p, details, a {
+p, details, a, figcaption {
     font-size: 1.25rem;
 
     @media screen and (min-width: 768px) {
@@ -149,5 +149,27 @@ aside {
             padding: 1rem 1.5rem;
             font-size: 1.25rem;
         }
+    }
+}
+
+figure {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin-block: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem;
     }
 }
